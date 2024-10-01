@@ -6,13 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>aAh! typefaces</title>
     <style>
+        :root {
+            --aah-pink: #da0974;
+            --aah-dark-pink: #8d054b;
+        }
+
         @font-face {
             font-family: 'Cavendish';
             src: url('CavendishRegular.woff2') format('woff2'),
                 url('CavendishRegular.woff') format('woff');
             font-weight: normal;
             font-style: normal;
-            font-display: swap;
+            font-display: block;
         }
 
         @font-face {
@@ -21,7 +26,7 @@
                 url('BenzieRegular.woff') format('woff');
             font-weight: normal;
             font-style: normal;
-            font-display: swap;
+            font-display: block;
         }
 
         @font-face {
@@ -30,7 +35,7 @@
                 url('AllsaintsRegular.woff') format('woff');
             font-weight: normal;
             font-style: normal;
-            font-display: swap;
+            font-display: block;
         }
 
         @font-face {
@@ -39,16 +44,16 @@
                 url('GrosvenorRegular.woff') format('woff');
             font-weight: normal;
             font-style: normal;
-            font-display: swap;
+            font-display: block;
         }
 
         @font-face {
-            font-family: 'Union';
+            font-family: 'Rosamond';
             src: url('UnionRegular.woff2') format('woff2'),
                 url('UnionRegular.woff') format('woff');
             font-weight: normal;
             font-style: normal;
-            font-display: swap;
+            font-display: block;
         }
 
         @font-face {
@@ -57,12 +62,25 @@
                 url('ChathamRegular.woff') format('woff');
             font-weight: normal;
             font-style: normal;
+            font-display: block;
+        }
+
+        @font-face {
+            font-family: 'Avant Garde';
+            src: url('AAHITCAvantGardeProBold.woff2') format('woff2'),
+                url('AAHITCAvantGardeProBold.woff') format('woff');
+            font-weight: bold;
+            font-style: normal;
             font-display: swap;
+        }
+
+        body {
+            font-family: 'Avant Garde';
         }
 
         header {
             color: white;
-            background-color: hotpink;
+            background-color: var(--aah-pink);
             padding: 40px;
             text-align: center;
         }
@@ -74,8 +92,11 @@
         }
 
 
-        p.specimen {
-            font-size: 4rem;
+        .specimen {
+            font-size: 4.5rem;
+            border: 0.5px solid grey;
+            padding: 10px;
+            margin-block: 0;
         }
 
         .grosvenor {
@@ -99,48 +120,133 @@
         }
 
         .rosamond {
-            font-family: 'Rosamond'
+            font-family: 'Rosamond';
+        }
+
+        .alphabet {
+            font-size: 3rem;
+            line-height: 1;
+            margin-block: 0;
+            overflow-wrap: break-word;
+            color: var(--aah-pink)
+        }
+
+        .one {
+            font-feature-settings: "aalt" 1;
+        }
+
+        .two {
+            font-feature-settings: "aalt" 2;
+        }
+
+        .three {
+            font-feature-settings: "aalt" 2;
+        }
+
+        h2 {
+            color: white;
+            background-color: var(--aah-pink);
+            padding: 15px 10px 10px 10px;
+        }
+
+        p {
+            font-size: 1.2rem;
+            text-wrap: pretty;
+        }
+
+        .label {
+            font-size: 1rem;
+            margin-block-end: 5px;
+        }
+
+        .download {
+            color: white;
+            background-color: var(--aah-pink);
+            padding: 10px;
+            margin-block: 20px;
+            display: inline-block;
         }
     </style>
 </head>
 
 <body>
     <header>
-        <h1>aAh typefaces</h1>
+        <h1>The aAh typeface collection</h1>
     </header>
     <main>
         <aside>
-            <p>A selection of typefaces produced for aAh!, Manchester Met's student-led arts and culture magazine, by Bradley Sansom.</p>
+            <p>A selection of typefaces produced for aAh!, Manchester Met's student-led arts and culture magazine, by Bradley Sansom and the aAh Design Collective.</p>
         </aside>
         <section>
             <h2>Grosvenor</h2>
-            <p>Based on the engravings above the door of the Manchester School of Art.</p>
+            <p>Based on the engravings above the door of the Manchester School of Art by Walter Crane from the late 19th century. This typeface, based on the school's wordmark, was digitised in 2023 for The LEGACY Issue.</p>
+            <p class="label">Try it out</p>
             <p class="specimen grosvenor" contenteditable="true">Lorem ipsum dolor sit amet. Aut beatae quae voluptatem deserunt nihil provident aut sunt. Cumque magni qui et. Officiis vero cum voluptas est officiis et doloribus quis.</p>
+            <p class="label">Full alphabet</p>
+            <p class="alphabet grosvenor zero">AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz</p>
+            <a href="grosvenor.otf" class="download">Download</a>
         </section>
         <section>
             <h2>Benzie</h2>
-            <p>From the MSoA letterpress; based on Helvetica Bold</p>
+            <p>As part of The FRESHERS Issue 24/25 the design team visited the Letterpress in the Manchester School of Art and printed alphabets of a range of typefaces, which we went on to use in the issue. This font, Benzie, is based on Helvetica Bold and was named after the building that's home to the design department, recently renamed after LS Lowry.</p>
+            <p class="label">Try it out</p>
             <p class="specimen benzie" contenteditable="true">Lorem ipsum dolor sit amet. Aut beatae quae voluptatem deserunt nihil provident aut sunt. Cumque magni qui et. Officiis vero cum voluptas est officiis et doloribus quis.</p>
+            <p class="label">Alternate characters</p>
+            <p class="alphabet benzie zero">AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz</p>
+            <p class="alphabet benzie one">AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz</p>
+            <p class="alphabet benzie two">AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz</p>
+            <p class="alphabet benzie three">AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz</p>
+            <p class="alphabet benzie symbols">.,:;"“”'-</p>
+            <a href="benzie.otf" class="download">Download</a>
         </section>
         <section>
             <h2>Chatham</h2>
-            <p>From the MSoA letterpress; based on a condensed gothic sans serif</p>
+            <p>Another typeface from the Letterpress - this was a big woodblock typeface. It's a condensed gothic sans serif, which we named Chatham, after the tower in which the bookbinding workshops are located.</p>
+            <p class="label">Try it out</p>
             <p class="specimen chatham" contenteditable="true">Lorem ipsum dolor sit amet. Aut beatae quae voluptatem deserunt nihil provident aut sunt. Cumque magni qui et. Officiis vero cum voluptas est officiis et doloribus quis.</p>
+            <p class="label">Alternate characters</p>
+            <p class="alphabet chatham zero">ABCDEFGHIJKLMNOPQRSTUVWXYZ</p>
+            <p class="alphabet chatham one">ABCDEFGHIJKLMNOPQRSTUVWXYZ</p>
+            <p class="alphabet chatham two">ABCDEFGHIJKLMNOPQRSTUVWXYZ</p>
+            <p class="alphabet chatham symbols">.,:;"“”'-</p>
+            <a href="chatham.otf" class="download">Download</a>
         </section>
         <section>
             <h2>Cavendish</h2>
-            <p>From the MSoA letterpress; based on Clarendon</p>
+            <p>A typeface based on the workshop's Clarendon case, a characterful early slab serif. As with most of these fonts, we printed them a few times and have incorporated alternates into the font to replicate printing from the same blocks multiple times.</p>
+            <p class="label">Try it out</p>
             <p class="specimen cavendish" contenteditable="true">Lorem ipsum dolor sit amet. Aut beatae quae voluptatem deserunt nihil provident aut sunt. Cumque magni qui et. Officiis vero cum voluptas est officiis et doloribus quis.</p>
+            <p class="label">Alternate characters</p>
+            <p class="alphabet cavendish zero">AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz</p>
+            <p class="alphabet cavendish one">AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz</p>
+            <p class="alphabet cavendish two">AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz</p>
+            <p class="alphabet cavendish three">AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz</p>
+            <p class="alphabet cavendish symbols">.,:;"“”'-</p>
+            <a href="cavendish.otf" class="download">Download</a>
         </section>
         <section>
             <h2>All Saints</h2>
-            <p>From the MSoA letterpress; based on Windsor</p>
+            <p>Another of the bindery's typefaces, this time based on Windsor. This too features plenty of alternates, as well as numerals.</p>
+            <p class="label">Try it out</p>
             <p class="specimen allsaints" contenteditable="true">Lorem ipsum dolor sit amet. Aut beatae quae voluptatem deserunt nihil provident aut sunt. Cumque magni qui et. Officiis vero cum voluptas est officiis et doloribus quis.</p>
+            <p class="label">Alternate characters</p>
+            <p class="alphabet allsaints zero">AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz</p>
+            <p class="alphabet allsaints one">AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz</p>
+            <p class="alphabet allsaints two">AaBbCcDdEeFfGgHhIiJjKkLlMmNnOoPpQqRrSsTtUuVvWwXxYyZz</p>
+            <p class="alphabet numbers allsaints numbers">0123456789</p>
+            <p class="alphabet allsaints symbols">.,:;"“”'-</p>
+            <a href="allsaints.otf" class="download">Download</a>
         </section>
         <section>
             <h2>Rosamond</h2>
-            <p>From the MSoA letterpress; based on a condensed serif</p>
+            <p>A final selection from the letterpress; this condensed serif wasn't all present, so some characters have been digitally recreated to complete the alphabet.</p>
+            <p class="label">Try it out</p>
             <p class="specimen rosamond" contenteditable="true">Lorem ipsum dolor sit amet. Aut beatae quae voluptatem deserunt nihil provident aut sunt. Cumque magni qui et. Officiis vero cum voluptas est officiis et doloribus quis.</p>
+            <p class="label">Alternate characters</p>
+            <p class="alphabet rosamond zero">ABCDEFGHIJKLMNOPQRSTUVWXYZ</p>
+            <p class="alphabet rosamond one">ABCDEFGHIJKLMNOPQRSTUVWXYZ</p>
+            <p class="alphabet rosamond symbols">&.,:;"“”'-</p>
+            <a href="rosamond.otf" class="download">Download</a>
         </section>
 
     </main>
