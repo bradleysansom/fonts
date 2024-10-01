@@ -1,0 +1,54 @@
+@font-face {
+    font-family: 'Cavendish';
+    src: url('CavendishRegular.woff2') format('woff2'),
+        url('CavendishRegular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Benzie';
+    src: url('BenzieRegular.woff2') format('woff2'),
+        url('BenzieRegular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Allsaints';
+    src: url('AllsaintsRegular.woff2') format('woff2'),
+        url('AllsaintsRegular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Grosvenor';
+    src: url('GrosvenorRegular.woff2') format('woff2'),
+        url('GrosvenorRegular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Union';
+    src: url('UnionRegular.woff2') format('woff2'),
+        url('UnionRegular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Chatham';
+    src: url('ChathamRegular.woff2') format('woff2'),
+        url('ChathamRegular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
